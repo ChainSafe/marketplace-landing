@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import localFont from 'next/font/local';
+import React from 'react';
 
 const neueMontreal = localFont({
   src: [

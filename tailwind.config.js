@@ -14,6 +14,12 @@ module.exports = {
         'brand-800': '#587A36',
         bg: '#141414',
         plate: '#B3B3B3',
+        'gray-900': '#141414',
+        'gray-800': '#4D4D4D',
+        'gray-100': '#E5E5E5',
+      },
+      gridTemplateColumns: {
+        '3-fixed': 'repeat(3, 384px)',
       },
     },
   },
