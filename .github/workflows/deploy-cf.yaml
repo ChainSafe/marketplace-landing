@@ -31,6 +31,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: multix
-          directory: ./packages/ui/build
+          projectName: marketplace-landing
+          directory: ./out
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
