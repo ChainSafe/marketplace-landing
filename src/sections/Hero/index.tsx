@@ -26,7 +26,7 @@ export default function Hero({}: FormPageProps) {
             </h1>
             <p className='mt-6 text-sm opacity-60'>02</p>
             <h2 className='max-w-2xl text-6xl font-bold tracking-tight text-white opacity-60'>
-              Build the best in-game/ web marketplace you`&apos;`ve been waiting
+              Build the best in-game/ web marketplace you&apos;ve been waiting
               for.
             </h2>
           </div>

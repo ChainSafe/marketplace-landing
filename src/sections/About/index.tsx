@@ -28,25 +28,23 @@ const features = [
 
 export default function About() {
   return (
-    <div className='overflow-hidden bg-gray-900 py-24 sm:py-32'>
+    <div className='overflow-hidden bg-gray-200 py-24 sm:py-32'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
-          <div className='lg:pr-8 lg:pt-4'>
-            <div className='lg:max-w-lg'>
-              <h2 className='mt-2 text-4xl font-bold tracking-tight text-white sm:text-4xl'>
-                Create an ecosystem that you own and control.
-              </h2>
-              <h3 className='my-8 text-2xl text-white'>
-                No need to rely on third party marketplaces anymore. Use our
-                marketplace building kit to make something that{' '}
-                <strong>looks</strong> and <em>feels</em> like your own.
-              </h3>
-            </div>
+        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20'>
+          <div className='lg:p1-4 flex flex-col justify-center lg:pt-4'>
+            <h1 className='max-w-2xl text-center text-6xl font-bold tracking-tight text-gray-900'>
+              Create an ecosystem that you own and control.
+            </h1>
+            <h3 className='my-6 text-center text-xl text-gray-900'>
+              No need to rely on third party marketplaces anymore. Use our
+              marketplace building kit to make something that{' '}
+              <strong>looks</strong> and <em>feels</em> like your own.
+            </h3>
           </div>
           <Image
             src='/placeholder.png'
             alt='Product screenshot'
-            className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
+            className='ounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
             width={2432}
             height={1442}
           />

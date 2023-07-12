@@ -14,9 +14,10 @@ module.exports = {
         'brand-800': '#587A36',
         bg: '#141414',
         plate: '#B3B3B3',
+        cardBorder: '#373737',
         'gray-900': '#141414',
         'gray-800': '#4D4D4D',
-        'gray-100': '#E5E5E5',
+        'gray-700': '#252425',
       },
       gridTemplateColumns: {
         '3-fixed': 'repeat(3, 384px)',

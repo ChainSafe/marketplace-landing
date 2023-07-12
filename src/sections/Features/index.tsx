@@ -32,7 +32,7 @@ export default function Features() {
         className='mx-auto grid grid-cols-1 justify-center space-y-4 lg:grid-cols-3-fixed lg:items-stretch lg:space-x-2 lg:space-y-0'>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
-            Highly customizable to your game`&apos;`s design
+            Highly customizable to your game&apos;s design
           </h3>
           <p className={cardDescriptionStyles}>
             Change your marketplace design to suit your game visuals
