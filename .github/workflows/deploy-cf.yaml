@@ -2,10 +2,8 @@ name: Marketplace Landing Deployment
 on:
   push:
     branches: ['main']
-    paths: ['packages/ui/**/*']
   pull_request:
     branches: ['main']
-    paths: ['packages/ui/**/*']
 
 jobs:
   deploy:
