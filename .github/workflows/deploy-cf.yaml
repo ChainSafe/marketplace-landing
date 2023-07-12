@@ -1,34 +1,25 @@
 name: Marketplace Landing Deployment
-on:
-  push:
-    branches: ['main']
-  pull_request:
-    branches: ['main']
+on: [push]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./packages/ui/
-    permissions:
-      contents: read
-      deployments: write
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          cache: yarn
-          node-version: '16'
-          cache-dependency-path: 'yarn.lock'
-      - run: corepack enable
-      - run: yarn install --immutable
-      - run: yarn build
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: marketplace-landing
-          directory: ./out
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      permissions:
+        contents: read
+        deployments: write
+      steps:
+          - uses: actions/checkout@v3
+          - uses: actions/setup-node@v3
+            with:
+              cache: yarn
+              node-version: '18'
+          - run: yarn install --frozen-lockfile
+          - run: yarn run build
+          - name: Publish to Cloudflare Pages
+            uses: cloudflare/pages-action@1
+            with:
+              apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+              accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+              projectName: marketplace-landing
+              directory: ./out
+              gitHubToken: ${{ secrets.GITHUB_TOKEN }}
