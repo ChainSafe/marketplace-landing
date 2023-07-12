@@ -3,6 +3,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 const features = [
   {
@@ -44,8 +45,8 @@ export default function HowToBuild() {
       </div>
       <div className='relative overflow-hidden pt-16'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-          <img
-            src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
+          <Image
+            src='/placeholder.png'
             alt='App screenshot'
             className='mb-[-12%] rounded-xl shadow-2xl ring-1 ring-white/10'
             width={2432}
@@ -59,21 +60,4 @@ export default function HowToBuild() {
       ;
     </div>
   );
-}
-
-{
-  /* <dl className='mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none'>
-  {features.map((feature) => (
-    <div key={feature.name} className='relative pl-9'>
-      <dt className='inline font-semibold text-white'>
-        <feature.icon
-          className='absolute left-1 top-1 h-5 w-5 text-indigo-500'
-          aria-hidden='true'
-        />
-        {feature.name}
-      </dt>{' '}
-      <dd className='inline'>{feature.description}</dd>
-    </div>
-  ))}
-</dl>; */
 }

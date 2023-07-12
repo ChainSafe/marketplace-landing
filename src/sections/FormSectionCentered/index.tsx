@@ -22,7 +22,8 @@ export default function FormSectionCentered({}: FormPageProps) {
         <div className='relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48 '>
           <div className='mx-auto max-w-3xl'>
             <h1 className='text-center text-5xl font-bold tracking-tight text-white'>
-              Revolutionize game-play with ChainSafe's upcoming web marketplace
+              Revolutionize game-play with ChainSafe`&apos;`s upcoming web
+              marketplace
             </h1>
             <p className='my-6 text-center text-xl tracking-tight text-white'>
               Empower players to buy, sell, and trade digital assets both in
