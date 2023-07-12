@@ -65,6 +65,7 @@ export default function HowToBuild() {
         <div className='grid-col-1 mx-auto mt-8 grid gap-y-4 md:grid-cols-2 md:gap-x-5 lg:grid-cols-4'>
           {cardContents.map((item: any, cardIndex: number) => (
             <StepCard
+              key={item.heading}
               heading={item.heading}
               index={cardIndex + 1}
               desc={item.desc}

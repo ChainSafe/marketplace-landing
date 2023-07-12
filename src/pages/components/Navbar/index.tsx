@@ -32,7 +32,7 @@ export default function Navbar() {
         className='flex items-center justify-between p-6 lg:px-8'
         aria-label='Global'>
         <Link href='/' className='flex lg:flex-1'>
-          <img
+          <Image
             src='/stacked-white.png'
             className='h-12'
             alt='ChainSafe Gaming'
