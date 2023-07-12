@@ -1,4 +1,4 @@
-name: Marketplace UI deployment
+name: Marketplace Landing Deployment
 on:
   push:
     branches: ['main']
