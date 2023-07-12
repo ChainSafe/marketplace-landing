@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import Image from 'next/image';
 
 type navbarLink = {
   name: string;
@@ -49,9 +50,12 @@ export default function Navbar() {
         {/* navbar  */}
         <div className='hidden lg:flex lg:gap-x-1'>
           {navbarLinks.map((item: navbarLink) => (
-            <a key={item.name} href={item.href} className='p-2.5 text-gray-100'>
+            <Link
+              key={item.name}
+              href={item.href}
+              className='p-2.5 text-gray-100'>
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
@@ -63,10 +67,14 @@ export default function Navbar() {
         <div className='fixed inset-0 z-50' />
         <Dialog.Panel className='fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10'>
           <div className='flex items-center justify-between'>
-            <a href='/' className='-m-1.5 p-1.5'>
+            <Link href='/' className='-m-1.5 p-1.5'>
               <span className='sr-only'>ChainSafe Gaming</span>
-              <img className='h-8 w-auto' src='favicon-32x32.png' alt='' />
-            </a>
+              <Image
+                className='h-8 w-auto'
+                src='/favicon-32x32.png'
+                alt='ChainSafe Gaming'
+              />
+            </Link>
             <button
               type='button'
               className='text-primary-200 -m-2.5 rounded-md p-2.5'
@@ -81,9 +89,12 @@ export default function Navbar() {
                 <div
                   key={item.name}
                   className='focus:border-primary-400 focus: border-1 space-y-4 py-3 transition-all hover:text-brand-400 lg:space-y-2'>
-                  <a href={item.href} target='_blank' rel='noopener noreferrer'>
+                  <Link
+                    href={item.href}
+                    target='_blank'
+                    rel='noopener noreferrer'>
                     {item.name}
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>

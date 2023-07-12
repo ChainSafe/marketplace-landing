@@ -3,6 +3,7 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 
 const features = [
   {
@@ -42,7 +43,7 @@ export default function About() {
               </h3>
             </div>
           </div>
-          <img
+          <Image
             src='/placeholder.png'
             alt='Product screenshot'
             className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
