@@ -62,7 +62,7 @@ export default function HowToBuild() {
           </div>
         </div>
 
-        <div className='grid-col-1 mx-auto mt-8 grid gap-y-4 md:grid-cols-2 md:gap-x-4 lg:grid-cols-4'>
+        <div className='grid-col-1 mx-auto mt-8 grid gap-y-4 md:grid-cols-2 md:gap-x-5 lg:grid-cols-4'>
           {cardContents.map((item: any, cardIndex: number) => (
             <StepCard
               heading={item.heading}
