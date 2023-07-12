@@ -34,7 +34,8 @@ export default function Navbar() {
         <Link href='/' className='flex lg:flex-1'>
           <Image
             src='/stacked-white.png'
-            className='h-12'
+            width={120}
+            height={60}
             alt='ChainSafe Gaming'
           />
         </Link>
@@ -73,6 +74,8 @@ export default function Navbar() {
                 className='h-8 w-auto'
                 src='/favicon-32x32.png'
                 alt='ChainSafe Gaming'
+                width={32}
+                height={32}
               />
             </Link>
             <button
