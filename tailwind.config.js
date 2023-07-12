@@ -22,6 +22,9 @@ module.exports = {
       gridTemplateColumns: {
         '3-fixed': 'repeat(3, 384px)',
       },
+      backgroundImage: {
+        'green-gradient': "url('/green-bg.png')",
+      },
     },
   },
   plugins: [],

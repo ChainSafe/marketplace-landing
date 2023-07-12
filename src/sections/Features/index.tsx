@@ -5,11 +5,12 @@ import {
   fadeInVariant,
   childVariants,
 } from '@/styles/animations';
+import Image from 'next/image';
 
 export default function Features() {
-  const cardStyles = `relative lg:max-w-sm min-h-[45vh] py-8 px-8 flex flex-col gap-x-2 rounded-xl bg-gray-100`;
-  const cardHeadingStyles = `text-2xl font-semibold text-gray-800 text-center`;
-  const cardDescriptionStyles = `text-xl text-gray-800 absolute top-[70%] tracking-tight max-w-[90%]`;
+  const cardStyles = `relative lg:max-w-sm py-8 px-8 flex flex-col gap-x-2 rounded-3xl border-2 border-cardBorder items-center`;
+  const cardHeadingStyles = `min-h-[60px] text-3xl font-semibold tracking-tight text-brand-200 text-center`;
+  const cardDescriptionStyles = `text-xl text-gray-300 tracking-tight text-center`;
 
   return (
     <motion.div
@@ -34,6 +35,13 @@ export default function Features() {
           <h3 className={cardHeadingStyles}>
             Highly customizable to your game&apos;s design
           </h3>
+          <Image
+            className='my-8'
+            src='/icon.png'
+            alt='Feature Icon'
+            width={90}
+            height={50}
+          />
           <p className={cardDescriptionStyles}>
             Change your marketplace design to suit your game visuals
           </p>
@@ -42,6 +50,13 @@ export default function Features() {
           <h3 className={cardHeadingStyles}>
             Simple step-by-step documentation
           </h3>
+          <Image
+            className='my-8'
+            src='/icon.png'
+            alt='Feature Icon'
+            width={90}
+            height={50}
+          />
           <p className={cardDescriptionStyles}>
             All steps are listed out in super simple language in our SDK
             documentation
@@ -49,6 +64,13 @@ export default function Features() {
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>Reliable tiers of support</h3>
+          <Image
+            className='my-8'
+            src='/icon.png'
+            alt='Feature Icon'
+            width={90}
+            height={50}
+          />
           <p className={cardDescriptionStyles}>
             Contact ChainSafe support via Discord or work with us to have a
             dedicated support line
