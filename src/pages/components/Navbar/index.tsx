@@ -32,10 +32,9 @@ export default function Navbar() {
         className='flex items-center justify-between p-6 lg:px-8'
         aria-label='Global'>
         <Link href='/' className='flex lg:flex-1'>
-          <Image
+          <img
+            className='h-10'
             src='/stacked-white.png'
-            width={120}
-            height={60}
             alt='ChainSafe Gaming'
           />
         </Link>
@@ -70,12 +69,12 @@ export default function Navbar() {
           <div className='flex items-center justify-between'>
             <Link href='/' className='-m-1.5 p-1.5'>
               <span className='sr-only'>ChainSafe Gaming</span>
-              <Image
+              <img
                 className='h-8 w-auto'
                 src='/favicon-32x32.png'
                 alt='ChainSafe Gaming'
-                width={32}
-                height={32}
+                // width={32}
+                // height={32}
               />
             </Link>
             <button

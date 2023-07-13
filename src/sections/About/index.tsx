@@ -41,12 +41,12 @@ export default function About() {
               <strong>looks</strong> and <em>feels</em> like your own.
             </h3>
           </div>
-          <Image
+          <img
             src='/placeholder.png'
             alt='Product screenshot'
-            className='ounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
-            width={2432}
-            height={1442}
+            className='rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
+            // width={2432}
+            // height={1442}
           />
         </div>
       </div>

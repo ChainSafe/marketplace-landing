@@ -64,12 +64,12 @@ export default function Features() {
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>Reliable tiers of support</h3>
-          <Image
+          <img
             className='my-8'
             src='/icon.png'
             alt='Feature Icon'
-            width={90}
-            height={50}
+            // width={90}
+            // height={50}
           />
           <p className={cardDescriptionStyles}>
             Contact ChainSafe support via Discord or work with us to have a
