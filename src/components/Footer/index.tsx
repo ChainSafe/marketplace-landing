@@ -85,7 +85,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className='bg-gray-900'>
-      <div className='mx-auto max-w-4xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8'>
+      <div className='mx-auto max-w-4xl overflow-hidden px-6 py-20 md:py-12 lg:px-3'>
         <nav
           className='-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-6'
           aria-label='Footer'>
@@ -99,7 +99,7 @@ export default function Footer() {
             </div>
           ))}
         </nav>
-        <div className='mt-10 flex justify-center space-x-5'>
+        <div className='mt-6 flex justify-center space-x-5'>
           {navigation.social.map((item) => (
             <a
               key={item.name}
@@ -110,7 +110,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className='mt-10 text-center text-xs leading-5 text-gray-500'>
+        <p className='mt-6 text-center text-xs leading-5 text-gray-500'>
           &copy;2023 ChainSafe Gaming
         </p>
       </div>

@@ -16,7 +16,7 @@ export default function FormSectionCentered({}: FormPageProps) {
 
   return (
     <div className='relative isolate bg-gray-100 py-8'>
-      <div className='grid grid-cols-1 lg:grid-cols-2'>
+      <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
         <div className='mx-auto max-w-2xl px-2 pt-10 lg:py-12 lg:pl-12'>
           <h1 className='text-3xl font-bold tracking-tight text-black lg:text-5xl'>
             Revolutionize game-play with ChainSafe&apos;s upcoming web
