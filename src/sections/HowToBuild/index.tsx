@@ -1,9 +1,6 @@
-import StepCard from '@/pages/components/StepCard';
+import StepCard from '@/components/StepCard';
 import { motion } from 'framer-motion';
-import {
-  parentVariant,
-  childVariants,
-} from '@/styles/animations';
+import { parentVariant, childVariants } from '@/styles/animations';
 
 const cardContents = [
   {

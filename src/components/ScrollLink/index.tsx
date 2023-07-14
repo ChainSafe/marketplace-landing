@@ -2,6 +2,7 @@
 // https://reacthustle.com/blog/nextjs-scroll-to-element
 import Link, { LinkProps } from 'next/link';
 import React, { PropsWithChildren } from 'react';
+
 // mirror the props of next/link component
 type AnchorProps = Omit<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,

@@ -1,5 +1,4 @@
-import ScrollLink from '@/pages/components/ScrollLink';
-import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form';
+import ScrollLink from '@/components/ScrollLink';
 import { motion } from 'framer-motion';
 import { fadeInVariant } from '@/styles/animations';
 import React from 'react';
@@ -11,12 +10,6 @@ export type FormPageProps = {
 };
 
 export default function Hero({}: FormPageProps) {
-  const { loaded, error } = useHubspotForm({
-    portalId: (process.env.NEXT_PUBLIC_HS_PORTAL_ID as string) || '7667626',
-    formId: '0f93c610-6f6d-4deb-9b1a-9ecc0f4134fa',
-    target: '#waitlist',
-  });
-
   return (
     <div className='relative isolate h-screen overflow-hidden bg-gray-900 py-24 lg:py-8'>
       {/* background */}
