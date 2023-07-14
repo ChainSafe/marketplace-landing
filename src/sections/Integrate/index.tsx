@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { parentVariant, childVariants } from '@/styles/animations';
 
 export default function Integrate() {
-  const baseCardStyles = `flex flex-col justify-center rounded-3xl border-2 border-gray-900`;
+  const baseCardStyles = `flex flex-col justify-center rounded-3xl border-[1px] border-[#373737]`;
   return (
     <div className='overflow-hidden bg-gray-900 lg:py-8'>
       <div className='mx-auto h-full max-w-7xl rounded-3xl bg-gradient-to-b from-[#B4FF68] to-white '>

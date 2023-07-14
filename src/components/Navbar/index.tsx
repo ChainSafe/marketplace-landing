@@ -14,7 +14,7 @@ const navbarLinks = [
     href: '',
   },
   {
-    name: 'web.unity Documentation',
+    name: 'Web.Unity Documentation',
     href: '',
   },
   {
@@ -26,9 +26,9 @@ const navbarLinks = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className='absolute inset-x-0 top-0 z-50 bg-black'>
+    <header className='absolute inset-x-0 top-0 z-50 bg-gray-900'>
       <nav
-        className='flex items-center justify-between p-6 lg:px-8'
+        className='flex items-center justify-between p-3 lg:px-8'
         aria-label='Global'>
         <Link href='/' className='flex lg:flex-1'>
           <img
@@ -52,8 +52,8 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className='p-2.5 text-gray-100'>
-              {item.name}
+              className='p-2.5 text-gray-100 transition-all hover:brightness-75'>
+              <u>{item.name}</u>
             </Link>
           ))}
         </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
                     href={item.href}
                     target='_blank'
                     rel='noopener noreferrer'>
-                    {item.name}
+                    <u>{item.name}</u>
                   </Link>
                 </div>
               ))}

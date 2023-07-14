@@ -34,11 +34,11 @@ export default function Hero({}: FormPageProps) {
         </div>
       </div>
       <div className='relative mx-auto grid max-w-7xl grid-cols-1 px-6 pt-12 lg:static lg:px-8 lg:pt-32 '>
-        <div className='rounded-3xl bg-gradient-to-b from-[#B4FF68] to-white px-4 py-8 transition-all hover:brightness-75 lg:max-w-[36%]'>
+        <div className='rounded-3xl bg-gradient-to-b from-[#B4FF68] to-white px-4 py-8 transition-all hover:brightness-75 lg:max-w-[40%]'>
           <p className='text-sm text-black'>01</p>
           <ScrollLink href='#waitlist'>
-            <h1 className='max-w-2xl text-6xl font-bold tracking-tight text-black'>
-              <u>Join our waitlist.</u>
+            <h1 className='max-w-2xl text-7xl font-bold tracking-tight text-black'>
+              <u>Join our waitlist</u>
             </h1>
           </ScrollLink>
         </div>
@@ -49,7 +49,7 @@ export default function Hero({}: FormPageProps) {
           className='relative mt-24 max-w-xl justify-self-end xl:mb-20'>
           <motion.div variants={fadeInVariant}>
             <p className='text-sm opacity-60'>02</p>
-            <h2 className='max-w-2xl text-5xl font-bold tracking-tight text-white md:text-6xl'>
+            <h2 className='max-w-2xl text-xl font-bold tracking-tight text-white md:text-7xl'>
               Build the best in-game/ web marketplace you&apos;ve been waiting
               for.
             </h2>
