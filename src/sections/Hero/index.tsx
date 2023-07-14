@@ -48,7 +48,7 @@ export default function Hero({}: FormPageProps) {
           viewport={{ once: true, amount: 0.5 }}
           className='relative mt-24 max-w-xl justify-self-end xl:mb-20'>
           <motion.div variants={fadeInVariant}>
-            <p className='text-sm opacity-60'>02</p>
+            <p className='text-sm text-white'>02</p>
             <h2 className='max-w-2xl text-xl font-bold tracking-tight text-white md:text-7xl'>
               Build the best in-game/ web marketplace you&apos;ve been waiting
               for.
@@ -57,7 +57,7 @@ export default function Hero({}: FormPageProps) {
         </motion.div>
         <ScrollLink
           href='#about'
-          className='absolute bottom-0 left-1/2 hidden translate-x-[-50%] flex-col items-center justify-center transition-all hover:brightness-75 md:flex lg:bottom-3 xl:bottom-0 xl:mt-4'>
+          className='absolute bottom-2 left-1/2 hidden translate-x-[-50%] flex-col items-center justify-center transition-all hover:brightness-75 md:flex xl:bottom-0 xl:mt-4'>
           <p className='text-center text-base text-white'>Learn More</p>
           <svg
             xmlns='http://www.w3.org/2000/svg'
