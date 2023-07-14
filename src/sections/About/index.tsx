@@ -1,34 +1,7 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from '@heroicons/react/20/solid';
-
-const features = [
-  {
-    name: 'Push to deploy.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Database backups.',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
-  },
-];
-
 export default function About() {
   return (
     <div className='overflow-hidden bg-gray-200 py-24 sm:py-32'>
-      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+      <div className='mx-auto max-w-7xl px-6 lg:px-8' id='about'>
         <div className='mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-4 lg:gap-y-8'>
           <div className='lg:p1-4 flex flex-col justify-center lg:pt-4'>
             <h1 className='mx-auto max-w-2xl text-center text-6xl font-bold tracking-tight text-gray-900'>

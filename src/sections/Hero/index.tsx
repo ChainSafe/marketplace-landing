@@ -1,4 +1,7 @@
+import ScrollLink from '@/pages/components/ScrollLink';
 import { useHubspotForm } from '@aaronhayes/react-use-hubspot-form';
+import { motion } from 'framer-motion';
+import { fadeInVariant } from '@/styles/animations';
 import React from 'react';
 
 export type FormPageProps = {
@@ -6,7 +9,6 @@ export type FormPageProps = {
   hsPortalId?: string;
   targetName?: string;
 };
-
 
 export default function Hero({}: FormPageProps) {
   const { loaded, error } = useHubspotForm({
@@ -39,20 +41,30 @@ export default function Hero({}: FormPageProps) {
         </div>
       </div>
       <div className='relative mx-auto grid max-w-7xl grid-cols-1 px-6 pt-12 lg:static lg:px-8 lg:pt-32 '>
-        <div className='rounded-3xl bg-gradient-to-b from-[#B4FF68] to-white px-4 py-8 lg:max-w-[40%]'>
+        <div className='rounded-3xl bg-gradient-to-b from-[#B4FF68] to-white px-4 py-8 transition-all hover:brightness-75 lg:max-w-[36%]'>
           <p className='text-sm text-black'>01</p>
-          <h1 className='max-w-2xl text-6xl font-bold tracking-tight text-black'>
-            <u>Join our waitlist.</u>
-          </h1>
+          <ScrollLink href='#waitlist'>
+            <h1 className='max-w-2xl text-6xl font-bold tracking-tight text-black'>
+              <u>Join our waitlist.</u>
+            </h1>
+          </ScrollLink>
         </div>
-        <div className='relative mt-4 max-w-xl justify-self-end'>
-          <p className='mt-6 text-sm opacity-60'>02</p>
-          <h2 className='max-w-2xl text-6xl font-bold tracking-tight text-white'>
-            Build the best in-game/ web marketplace you&apos;ve been waiting
-            for.
-          </h2>
-        </div>
-        <div className='absolute bottom-0 left-1/2 hidden translate-x-[-50%] flex-col items-center justify-center md:flex lg:bottom-3'>
+        <motion.div
+          initial='offscreen'
+          whileInView='onscreen'
+          viewport={{ once: true, amount: 0.5 }}
+          className='relative mt-7 max-w-xl justify-self-end lg:mt-24'>
+          <motion.div variants={fadeInVariant}>
+            <p className='text-sm opacity-60'>02</p>
+            <h2 className='max-w-2xl text-6xl font-bold tracking-tight text-white'>
+              Build the best in-game/ web marketplace you&apos;ve been waiting
+              for.
+            </h2>
+          </motion.div>
+        </motion.div>
+        <ScrollLink
+          href='#about'
+          className='absolute bottom-0 left-1/2 hidden translate-x-[-50%] flex-col items-center justify-center transition-all hover:brightness-75 md:flex lg:bottom-3'>
           <p className='text-center text-base text-white'>Learn More</p>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -67,7 +79,7 @@ export default function Hero({}: FormPageProps) {
               d='M19.5 8.25l-7.5 7.5-7.5-7.5'
             />
           </svg>
-        </div>
+        </ScrollLink>
       </div>
     </div>
   );

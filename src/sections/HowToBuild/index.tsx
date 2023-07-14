@@ -2,7 +2,6 @@ import StepCard from '@/pages/components/StepCard';
 import { motion } from 'framer-motion';
 import {
   parentVariant,
-  fadeInVariant,
   childVariants,
 } from '@/styles/animations';
 

@@ -33,7 +33,7 @@ export const parentVariant:Variants = {
     transition: {
       delayChildren: 0.2,
       ease: [0.32, 0.23, 0.4, 0.9],
-      staggerChildren: 0.2,
+      staggerChildren: 0.25,
     },
   },
 };
