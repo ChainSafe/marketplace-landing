@@ -30,7 +30,7 @@ export default function Features() {
         initial='offscreen'
         whileInView='onscreen'
         transition={{ duration: 0.8, delay: 0.1 }}
-        className='mx-auto grid grid-cols-1 justify-center space-y-4 lg:grid-cols-3-fixed lg:items-stretch lg:space-x-2 lg:space-y-0'>
+        className='mx-auto grid grid-cols-1 justify-center space-y-4 lg:grid-cols-3 lg:items-stretch lg:space-x-2 lg:space-y-0 xl:grid-cols-3-fixed'>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>
             Highly customizable to your game&apos;s design

@@ -3,10 +3,11 @@ import { Variants } from "framer-motion";
 export const fadeInVariant: Variants = {
   offscreen: {
     opacity: 0,
+    y: 20
   },
   onscreen: {
     opacity: 1,
-    y: -50,
+    y: -20,
     transition: {
       duration: 0.5,
     },
