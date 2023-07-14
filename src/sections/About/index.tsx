@@ -3,7 +3,6 @@ import {
   LockClosedIcon,
   ServerIcon,
 } from '@heroicons/react/20/solid';
-import Image from 'next/image';
 
 const features = [
   {
@@ -30,9 +29,9 @@ export default function About() {
   return (
     <div className='overflow-hidden bg-gray-200 py-24 sm:py-32'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20'>
+        <div className='mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-4 lg:gap-y-8'>
           <div className='lg:p1-4 flex flex-col justify-center lg:pt-4'>
-            <h1 className='max-w-2xl text-center text-6xl font-bold tracking-tight text-gray-900'>
+            <h1 className='mx-auto max-w-2xl text-center text-6xl font-bold tracking-tight text-gray-900'>
               Create an ecosystem that you own and control.
             </h1>
             <h3 className='my-6 text-center text-xl text-gray-900'>
@@ -42,11 +41,9 @@ export default function About() {
             </h3>
           </div>
           <img
-            src='/placeholder.png'
+            src='/demo.png'
             alt='Product screenshot'
             className='rounded-xl shadow-xl ring-1 ring-white/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'
-            // width={2432}
-            // height={1442}
           />
         </div>
       </div>

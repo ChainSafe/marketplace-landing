@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import Image from 'next/image';
 
 type navbarLink = {
   name: string;
@@ -73,8 +72,6 @@ export default function Navbar() {
                 className='h-8 w-auto'
                 src='/favicon-32x32.png'
                 alt='ChainSafe Gaming'
-                // width={32}
-                // height={32}
               />
             </Link>
             <button

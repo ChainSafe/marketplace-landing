@@ -6,7 +6,7 @@ export type StepCardProps = {
 
 export default function StepCard({ heading, desc, index }: StepCardProps) {
   return (
-    <div className='relative rounded-lg border-2 border-cardBorder px-7 py-3'>
+    <div className='relative rounded-xl border-2 border-cardBorder px-7 py-3'>
       <span className='absolute left-[-6%] top-1/4 rounded-full bg-gray-700 px-3 py-1 text-lg text-brand-400'>
         {index}
       </span>

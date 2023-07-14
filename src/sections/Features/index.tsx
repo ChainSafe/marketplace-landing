@@ -50,13 +50,7 @@ export default function Features() {
           <h3 className={cardHeadingStyles}>
             Simple step-by-step documentation
           </h3>
-          <Image
-            className='my-8'
-            src='/icon.png'
-            alt='Feature Icon'
-            width={90}
-            height={50}
-          />
+          <img className='my-12' src='/icon2.png' alt='Feature Icon' />
           <p className={cardDescriptionStyles}>
             All steps are listed out in super simple language in our SDK
             documentation
@@ -64,13 +58,7 @@ export default function Features() {
         </motion.div>
         <motion.div variants={childVariants} className={cardStyles}>
           <h3 className={cardHeadingStyles}>Reliable tiers of support</h3>
-          <img
-            className='my-8'
-            src='/icon.png'
-            alt='Feature Icon'
-            // width={90}
-            // height={50}
-          />
+          <img className='my-8' src='/icon3.png' alt='Feature Icon' />
           <p className={cardDescriptionStyles}>
             Contact ChainSafe support via Discord or work with us to have a
             dedicated support line

@@ -18,7 +18,7 @@ export default function Home() {
       <HowToBuild />
       <Integrate />
       <Features />
-      {/* <FormSectionCentered /> */}
+      <FormSectionCentered />
       <Footer />
     </HubspotProvider>
   );

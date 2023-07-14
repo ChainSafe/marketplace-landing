@@ -1,11 +1,10 @@
-import StepCard, { StepCardProps } from '@/pages/components/StepCard';
+import StepCard from '@/pages/components/StepCard';
+import { motion } from 'framer-motion';
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from '@heroicons/react/20/solid';
-import Image from 'next/image';
-import { ReactNode } from 'react';
+  parentVariant,
+  fadeInVariant,
+  childVariants,
+} from '@/styles/animations';
 
 const cardContents = [
   {
@@ -26,30 +25,13 @@ const cardContents = [
   },
 ];
 
-const features = [
-  {
-    name: 'Push to deploy.',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: 'SSL certificates.',
-    description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
-    icon: LockClosedIcon,
-  },
-  {
-    name: 'Database backups.',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-    icon: ServerIcon,
-  },
-];
-
 export default function HowToBuild() {
   return (
-    <div className='overflow-hidden bg-gray-900 py-24 sm:py-32'>
+    <motion.div
+      initial='offscreen'
+      whileInView='onscreen'
+      viewport={{ once: true, amount: 0.5 }}
+      className='overflow-hidden bg-gray-900 py-24'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 '>
           <div className='flex flex-col items-center justify-center lg:pt-4'>
@@ -62,17 +44,24 @@ export default function HowToBuild() {
           </div>
         </div>
 
-        <div className='grid-col-1 mx-auto mt-8 grid gap-y-4 md:grid-cols-2 md:gap-x-5 lg:grid-cols-4'>
+        <motion.div
+          variants={parentVariant}
+          initial='offscreen'
+          whileInView='onscreen'
+          transition={{ duration: 1.2, delay: 0.5 }}
+          className='grid-col-1 mx-auto mt-8 grid gap-y-4 md:grid-cols-2 md:gap-x-5 lg:grid-cols-4'>
           {cardContents.map((item: any, cardIndex: number) => (
-            <StepCard
-              key={item.heading}
-              heading={item.heading}
-              index={cardIndex + 1}
-              desc={item.desc}
-            />
+            <motion.div variants={childVariants}>
+              <StepCard
+                key={item.heading}
+                heading={item.heading}
+                index={cardIndex + 1}
+                desc={item.desc}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 }
