@@ -26,7 +26,7 @@ const navbarLinks = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <header className='absolute inset-x-0 top-0 z-50 bg-gray-900'>
+    <header className='fixed inset-x-0 top-0 z-50 bg-gray-900 opacity-90'>
       <nav
         className='flex items-center justify-between p-3 lg:px-8'
         aria-label='Global'>
