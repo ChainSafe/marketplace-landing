@@ -9,7 +9,7 @@ const cardContents = [
   },
   {
     heading: 'Drag & drop',
-    desc: 'Marketplace prefab',
+    desc: 'Marketplace building kit',
   },
   {
     heading: 'Follow documentation',

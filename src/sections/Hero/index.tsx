@@ -50,7 +50,7 @@ export default function Hero({}: FormPageProps) {
           <motion.div variants={fadeInVariant}>
             <p className='text-sm text-white'>02</p>
             <h2 className='max-w-2xl text-7xl font-bold tracking-tight text-white'>
-              Build the best in-game/ web marketplace you&apos;ve been waiting
+              Build the immersive in game marketplace you&apos;ve been waiting
               for.
             </h2>
           </motion.div>

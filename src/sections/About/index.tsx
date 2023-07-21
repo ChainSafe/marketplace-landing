@@ -8,9 +8,10 @@ export default function About() {
               Create an ecosystem that you own and control.
             </h1>
             <h3 className='my-6 text-center text-xl text-gray-900'>
-              No need to rely on third party marketplaces anymore. Use our
-              marketplace building kit to make something that{' '}
-              <strong>looks</strong> and <em>feels</em> like your own.
+              No need to disrupt gameplay with third party marketplaces anymore.
+              Use the ChainSafe Gaming marketplace building kit to make
+              something that <strong>looks</strong> and <em>feels</em> like your
+              own.{' '}
             </h3>
           </div>
           <img

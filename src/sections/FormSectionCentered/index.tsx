@@ -15,17 +15,13 @@ export default function FormSectionCentered({}: FormPageProps) {
   });
 
   return (
-    <div className='relative isolate bg-gray-100 py-8'>
+    <div className='relative isolate bg-gray-100 py-16 lg:py-8'>
       <div className='mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2'>
         <div className='mx-auto max-w-2xl px-2 pt-10 lg:py-12 lg:pl-12'>
           <h1 className='text-3xl font-bold tracking-tight text-black lg:text-5xl'>
-            Revolutionize game-play with ChainSafe&apos;s upcoming web
-            marketplace
+            Use ChainSafe&apos;s web marketplace to mint, organize and promote
+            your NFTs
           </h1>
-          <p className='mt-4 text-xl tracking-tight text-gray-900 lg:text-2xl'>
-            Empower players to buy, sell, and trade digital assets both in your
-            game and on the web.
-          </p>
         </div>
         <form className='px-2 pt-20 lg:px-7 lg:py-12'>
           <div className='mx-auto max-w-xl lg:mr-0 lg:max-w-lg'>
