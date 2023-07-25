@@ -11,14 +11,14 @@ type navbarLink = {
 const navbarLinks = [
   {
     name: 'ChainSafe Gaming',
-    href: '',
+    href: 'https://gaming.chainsafe.io',
   },
   {
-    name: 'Web.Unity Documentation',
-    href: '',
+    name: 'Web3.Unity Documentation',
+    href: 'https://docs.gaming.chainsafe.io',
   },
   {
-    name: 'Contact us',
+    name: 'Contact Us',
     href: 'mailto:info@chainsafe.io',
   },
 ];
