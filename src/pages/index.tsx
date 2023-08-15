@@ -8,10 +8,12 @@ import FormSectionCentered from '@/sections/FormSectionCentered';
 import Footer from '../components/Footer';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import Navbar from '../components/Navbar';
+import Layout from '@/components/Layout';
 
 export default function Home() {
   return (
     <HubspotProvider>
+      <Layout/>
       <Navbar />
       <Hero />
       <About />
