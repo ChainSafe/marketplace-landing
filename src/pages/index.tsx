@@ -14,71 +14,58 @@ export default function Home() {
   return (
     <HubspotProvider>
       <Head>
-        <title>
-          The interoperability layer for building cross-blockchain applications
-          | Sygma
-        </title>
+        <title>ChainSafe Gaming Marketplace</title>
+        {/* create marketplace plausible script */}
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta
           name='description'
-          content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
-            for seamless communication across EVM, Substrate, Cosmos and more."
+          content="Create a player-centric in-game marketplace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
         />
         {/*<!-- OG Meta Tags -->*/}
         <meta
           property='og:url'
-          content='https://buildwithsygma.com/'
+          content='https://marketplace.chainsafe.io/'
           key='ogurl'
         />
         <meta
           property='og:image'
-          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public'
+          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/73764230-eea4-4d79-71a7-721a06a87e00/public'
           key='ogimage'
         />
         <meta
           property='og:site_name'
-          content='Sygma Website'
+          content='ChainSafe Gaming Marketplace'
           key='ogsitename'
         />
         <meta
           property='og:title'
-          content='The interoperability layer for building cross-blockchain
-            applications | Sygma'
+          content='Gaming-focussed NFT marketplace | ChainSafe Gaming'
           key='ogtitle'
         />
         <meta
           property='og:description'
-          content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
-            for seamless communication across EVM, Substrate, Cosmos and more."
+          content="Create a player-centric marketplace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
           key='ogdesc'
         />
         {/*<!-- Twitter Meta Tags -->*/}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:site' content='@buildwithsygma' />
+        <meta name='twitter:site' content='@ChainSafeth' />
         <meta
           name='twitter:title'
-          content='The interoperability layer for building cross-blockchain
-            applications'
+          content='Gaming-focussed NFT marketplace | ChainSafe Gaming'
         />
         <meta
           name='twitter:description'
-          content="Build on Sygma's cross-chain infrastructure with our TypeScript SDK
-            for seamless communication across EVM, Substrate, Cosmos and more."
+          content="Create a player-centric marketp`lace with ChainSafe's Marketplace. Own & control your ecosystem, enabling seamless access to assets during gameplay."
         />
         <meta
           name='twitter:image'
-          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/3593c6f4-4eb9-4e82-cdd9-564d4ddc5c00/public'
+          content='https://imagedelivery.net/qdx9xDn6TxxInQGWsuRsVg/73764230-eea4-4d79-71a7-721a06a87e00/public'
         />
         <script
-          type='text/javascript'
-          id='hs-script-loader'
-          async
           defer
-          src='//js.hs-scripts.com/39701769.js'></script>
-        <script
-          defer
-          data-domain='buildwithsygma.com'
+          data-domain='marketplace.chainsafe.io'
           src='https://plausible.io/js/script.outbound-links.js'></script>
       </Head>
       <Navbar />
