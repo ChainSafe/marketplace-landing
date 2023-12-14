@@ -1,10 +1,6 @@
 const navigation = {
   main: [
     {
-      name: 'In-Game Marketplace Documentation',
-      href: 'https://docs.gaming.chainsafe.io/current/in-game-marketplace',
-    },
-    {
       name: 'Web3 Gaming Guide',
       href: 'https://blog.chainsafe.io/the-definitive-guide-to-web3-gaming-5b5fa1f64584',
     },

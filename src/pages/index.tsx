@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import { HubspotProvider } from '@aaronhayes/react-use-hubspot-form';
 import Navbar from '../components/Navbar';
 import Head from 'next/head';
+import CaseStudy from '@/sections/CaseStudy';
 
 export default function Home() {
   return (
@@ -73,6 +74,7 @@ export default function Home() {
       <About />
       <HowToBuild />
       <Integrate />
+      <CaseStudy />
       <Features />
       <FormSectionCentered />
       <Footer />
