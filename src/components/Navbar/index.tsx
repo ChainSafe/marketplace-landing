@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
@@ -12,6 +13,10 @@ const navbarLinks = [
   {
     name: 'ChainSafe Gaming',
     href: 'https://gaming.chainsafe.io',
+  },
+  {
+    name: 'Case Study',
+    href: 'https://blog.chainsafe.io/echelon-nft-marketplace/',
   },
   {
     name: 'Web3.Unity Documentation',
